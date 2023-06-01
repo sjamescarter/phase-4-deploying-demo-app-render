@@ -2,7 +2,7 @@
 # exit on error
 set -o errexit
 
-rm -rf publid
+rm -rf public
 npm install --prefix client && npm run build --prefix client
 cp -a client/build/. public/
 
